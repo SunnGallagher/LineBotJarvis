@@ -7,7 +7,7 @@ $content = file_get_contents('php://input');
 // Parse JSON
 $events = json_decode($content, true);
 
-$operator = array("+", "-", "/",);
+
 // Validate parsed JSON data
 if (!is_null($events['events'])) {
 	// Loop through each event
@@ -35,8 +35,8 @@ if (!is_null($events['events'])) {
 			{
 				$messages = [
 				'type' => 'sticker',
-				"packageId": "1",
-  				"stickerId": "1"
+				'packageId': '1',
+  				'stickerId': '1'
 				];
 			}
 			else
