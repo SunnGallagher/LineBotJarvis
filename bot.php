@@ -1,9 +1,6 @@
 <?php
 
-$include_path = ".;c:\token";
-$file = file_get_contents('./token.txt', $include_path);
-
-$access_token = $file;
+$access_token = 'Ycdb4tYcPnoxlqkXjN4wOIDejf2Rmg46u2LvkYuu749PmYHmy8m2Xq4+jEAxdOXxczWbGNmrkf3oRpEJIS7otH5gntxC6Zx95tUhCCYiKj0eEpeVGzv3sFnJHELRtwd0jPkvdrDHQgfCpZ7/26TS6wdB04t89/1O/w1cDnyilFU=s';
 
 // Get POST body content
 $content = file_get_contents('php://input');
