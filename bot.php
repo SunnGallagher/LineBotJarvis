@@ -6,6 +6,8 @@ $access_token = 'Ycdb4tYcPnoxlqkXjN4wOIDejf2Rmg46u2LvkYuu749PmYHmy8m2Xq4+jEAxdOX
 $content = file_get_contents('php://input');
 // Parse JSON
 $events = json_decode($content, true);
+
+$operator = array("+", "-", "/",);
 // Validate parsed JSON data
 if (!is_null($events['events'])) {
 	// Loop through each event
@@ -29,12 +31,20 @@ if (!is_null($events['events'])) {
 				'text' => $stringAns . '  ไงล่ะ ไอเมี้ยวอ้วนเอ๊ยยย'
 				];
 			}
+			elseif($text == 'ขอบคุณงับ')
+			{
+				$messages = [
+				'type' => 'sticker',
+				"packageId": "1",
+  				"stickerId": "1"
+				];
+			}
 			else
 			{
 			// Build message to reply back
 				$messages = [
 					'type' => 'text',
-				'text' => 'คิดถึงข้าละสิ เมี้ยวๆ'
+					'text' => 'คิดถึงข้าละสิ เมี้ยวๆ'
 			];
 
 			}
