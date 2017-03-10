@@ -35,8 +35,8 @@ if (!is_null($events['events'])) {
 			{
 				$messages = [
 				'type' => 'sticker',
-				'packageId'=> '3',
-  				'stickerId'=> '1'
+				'packageId'=> '1',
+  				'stickerId'=> '11'
 				];
 			}
 			else
