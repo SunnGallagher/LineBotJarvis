@@ -1,5 +1,11 @@
 <?php
-$access_token = 'Ycdb4tYcPnoxlqkXjN4wOIDejf2Rmg46u2LvkYuu749PmYHmy8m2Xq4+jEAxdOXxczWbGNmrkf3oRpEJIS7otH5gntxC6Zx95tUhCCYiKj0eEpeVGzv3sFnJHELRtwd0jPkvdrDHQgfCpZ7/26TS6wdB04t89/1O/w1cDnyilFU=';
+
+$filename = "C:/token/token.txt";
+$handle = fopen($filename, "r");
+$contents = fread($handle, filesize($filename));
+fclose($handle);
+
+$access_token = $contents;
 
 // Get POST body content
 $content = file_get_contents('php://input');
@@ -27,7 +33,7 @@ if (!is_null($events['events'])) {
 				$stringAns = (string)$ans;
 				$messages = [
 				'type' => 'text',
-				'text' => $stringAns . '  ไงล่ะ ไอเมี้ยวอ้วนเอ้ยยย'
+				'text' => $stringAns . '  ไงล่ะ ไอเมี้ยวอ้วนเอ๊ยยย'
 				];
 			}
 			else
