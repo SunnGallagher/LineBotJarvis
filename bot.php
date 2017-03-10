@@ -20,10 +20,8 @@ if (!is_null($events['events'])) {
 			if(strpos($text, '+') !== false)
 			{
 				$arraytext = explode("+", $text, 2);
-				$tmp1 = $arraytext[0];
-				$tmp2 = $arraytext[1];
-				$num1 = (int)$tmp1;
-				$num2 = (int)$tmp2;
+				$num1 = (int)$arraytext[0];
+				$num2 = (int)$arraytext[1];
 				$ans = $num1 + $num2;
 				$stringAns = (string)$ans;
 				$messages = [
