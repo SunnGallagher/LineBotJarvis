@@ -31,12 +31,12 @@ if (!is_null($events['events'])) {
 				'text' => $stringAns . '  ไงล่ะ ไอเมี้ยวอ้วนเอ๊ยยย'
 				];
 			}
-			elseif($text === 'ขอบคุณงับ')
+			elseif(strpos($text, 'ขอบคุณ') !== false)
 			{
 				$messages = [
 				'type' => 'sticker',
 				'packageId'=> '1',
-  				'stickerId'=> '11'
+  				'stickerId'=> '2'
 				];
 			}
 			else
