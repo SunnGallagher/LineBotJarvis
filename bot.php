@@ -1,6 +1,6 @@
 <?php
 
-$access_token = 'Ycdb4tYcPnoxlqkXjN4wOIDejf2Rmg46u2LvkYuu749PmYHmy8m2Xq4+jEAxdOXxczWbGNmrkf3oRpEJIS7otH5gntxC6Zx95tUhCCYiKj0eEpeVGzv3sFnJHELRtwd0jPkvdrDHQgfCpZ7/26TS6wdB04t89/1O/w1cDnyilFU=';
+$access_token = 'ZqWh38XF/ogTCKohjdr1cIAxMBTKGe0UaggAiF9WilmHODIEOSJqHeqw5TJHV7xYczWbGNmrkf3oRpEJIS7otH5gntxC6Zx95tUhCCYiKj3WL6n+S/zdKc8uD8dl8yquiTpdolavo+Ox+5BKqK5eugdB04t89/1O/w1cDnyilFU=';
 
 // Get POST body content
 $content = file_get_contents('php://input');
@@ -31,7 +31,7 @@ if (!is_null($events['events'])) {
 				'text' => $stringAns . '  ไงล่ะ ไอเมี้ยวอ้วนเอ๊ยยย'
 				];
 			}
-			elseif($text == 'ขอบคุณงับ')
+			elseif($text === 'ขอบคุณงับ')
 			{
 				$messages = [
 				'type' => 'sticker',
