@@ -27,7 +27,7 @@ if (!is_null($events['events'])) {
 				$stringAns = (string)$ans;
 				$messages = [
 				'type' => 'text',
-				'text' => $stringAns . '  ไงละ ไอเมี้ยวอ้วนเอ้ยยย'
+				'text' => $stringAns . '  ไงล่ะ ไอเมี้ยวอ้วนเอ้ยยย'
 				];
 			}
 			else
