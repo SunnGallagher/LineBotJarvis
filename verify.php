@@ -1,9 +1,6 @@
 <?php
-
-$filename = "C:/token/token.txt";
-$handle = fopen($filename, "r");
-$contents = fread($handle, filesize($filename));
-fclose($handle);
+$include_path = ".;c:\token";
+$file = file_get_contents('./token.txt', $include_path);
 
 $access_token = $contents;
 

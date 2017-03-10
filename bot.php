@@ -1,11 +1,9 @@
 <?php
 
-$filename = "C:/token/token.txt";
-$handle = fopen($filename, "r");
-$contents = fread($handle, filesize($filename));
-fclose($handle);
+$include_path = ".;c:\token";
+$file = file_get_contents('./token.txt', $include_path);
 
-$access_token = $contents;
+$access_token = $file;
 
 // Get POST body content
 $content = file_get_contents('php://input');
